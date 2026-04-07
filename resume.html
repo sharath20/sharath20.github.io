@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venkat Mudhigonda — Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">Venkat</a>
+      <a href="resume.md">Resume (MD)</a>
+      <a href="resume.html" aria-label="Resume (HTML)">Resume (HTML)</a>
+      <a href="resume.pdf" download="Venkat_Mudhigonda_Resume.pdf" target="_blank" aria-label="Resume PDF download">Resume (PDF)</a>
+    </nav>
+  </header>
+  <main id="top" class="section resume" style="padding-top:20px;">
+    <header class="resume-header" aria-label="Resume header">
+      <h1>Venkat Mudhigonda</h1>
+      <p class="contact">Email • Dallas, TX • LinkedIn: <a href="https://linkedin.com/in/sharathmudhigonda">linkedin.com/in/sharathmudhigonda</a> • GitHub: <a href="https://github.com/your-username">your-username</a></p>
+    </header>
+
+    <section class="resume-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, C#, .NET Core, PHP (Laravel, Laminas), JavaScript, TypeScript, React, Redux</li>
+        <li><strong>Cloud & Infrastructure:</strong> AWS (S3, CloudFront, EC2, ElastiCache), Docker, Kubernetes, CI/CD Pipelines, Splunk</li>
+        <li><strong>Data & Messaging:</strong> PostgreSQL, SQL Server, MySQL, Redis, Couchbase, RabbitMQ, Kafka</li>
+        <li><strong>Practices & Tools:</strong> Distributed Systems, Microservices, RESTful APIs, OWASP, xUnit, PHPUnit, Selenium, Playwright, Git</li>
+        <li><strong>AI Tools:</strong> Claude (Anthropic), Kimi K, OpenCode</li>
+      </ul>
+    </section>
+
+    <section class="resume-section" aria-labelledby="work-title">
+      <h2 id="work-title">Work Experience</h2>
+      <h3>Paycom — Senior Software Engineer (July 2018 - Present)</h3>
+      <ul>
+        <li>Architected 15+ enterprise microservices in Python and .NET Core (C#) on fault-tolerant AWS infrastructure (S3, CloudFront, EC2, ElastiCache), reducing API response time by 40% and sustaining 99.9% uptime, processing millions of regulated financial transactions monthly.</li>
+        <li>Led 4-month platform migration from Windows to Linux using Docker containerization across production applications, enabling autoscaling and cutting deployment time from 1 hour to 15 minutes for 50+ developers.</li>
+        <li>Implemented GitLab CI/CD pipelines with blue-green deployment strategy, accelerating release frequency from monthly to weekly with zero production incidents during PHP 7.4–8.3 upgrades and full OWASP compliance.</li>
+        <li>Developed 400+ self-service reporting features using the Laminas framework with Redis caching and query optimization, processing millions of workforce records without manual intervention.</li>
+        <li>Increased unit test coverage from 15% to 85% using xUnit (.NET) and PHPUnit; reduced production defects by 60%.</li>
+        <li>Improved test automation efficiency via parallel execution and flaky-test remediation in Selenium and Playwright, reducing regression runtime by 33% (6 hrs → 4 hrs) across 50+ daily runs.</li>
+        <li>Optimized React SPA with code-splitting (25% bundle reduction, 40% faster load) and migrated legacy storage to AWS S3/CloudFront CDN for improved scalability and observability.</li>
+        <li>Mentored 35+ engineers and interns on .NET, Python, C#, React, and MySQL best practices via structured training and pair programming, reducing onboarding time by 30%.</li>
+        <li>Actively leverage AI coding tools (Claude, Kimi K, OpenCode) to accelerate feature development, code reviews, and documentation, improving team velocity and output quality.</li>
+      </ul>
+    </section>
+
+    <section class="resume-section" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <p>Master of Science, Computer Science — University of Oklahoma, May 2018</p>
+    </section>
+  </main>
+  <footer class="site-footer">© <span id="year"></span> Venkat Mudhigonda</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
