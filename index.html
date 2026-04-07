@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Lightweight dark- themed portfolio page." />
+</head>
+<body>
+  <header class="site-header">
+  <nav class="nav" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Home">Your Name</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.md" target="_blank">Resume</a>
+      <a href="resume.html" target="_blank" aria-label="Resume (HTML)">Resume (HTML)</a>
+      <a href="resume.pdf" download="Venkat_Mudhigonda_Resume.pdf" target="_blank" aria-label="Resume PDF download">Resume (PDF)</a>
+    </nav>
+    <div class="hero" id="home">
+      <div class="avatar" aria-label="Profile">
+        <span class="initials">YN</span>
+      </div>
+      <h1>Your Name</h1>
+      <p class="subtitle">Frontend developer • React, CSS, UX</p>
+      <p class="cta-wrap">
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn outline" href="#contact">Hire me</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p>I craft accessible, fast web experiences with a focus on clean design and thoughtful interactions.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-thumb" aria-label="Project thumbnail"></div>
+          <div class="card-content">
+            <h3>Project One</h3>
+            <p>A brief description of the project highlighting tech and outcomes.</p>
+            <a href="#" aria-label="Open Project One">Learn more</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-thumb" aria-label="Project thumbnail"></div>
+          <div class="card-content">
+            <h3>Project Two</h3>
+            <p>Another quick summary of a different project with key tech.</p>
+            <a href="#" aria-label="Open Project Two">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to work together? Reach out via email or connect on LinkedIn.</p>
+      <p><a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Your Name
+  </footer>
+
+  <script>
+    // simple current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
