@@ -58,7 +58,73 @@ body {
 .card-content p { margin: 0; color: var(--muted); font-size: 14px; }
 .card-content a { align-self: start; color: #93c5fd; text-decoration: none; font-weight: 500; }
 .site-footer { text-align: center; padding: 24px; color: var(--muted); border-top: 1px solid rgba(255,255,255,0.08); }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.skill-category {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.skill-category h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.skill-category p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.achievement-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.achievement-icon {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 6px;
+  box-shadow: 0 0 8px rgba(125,211,252,0.4);
+}
+.achievement-content h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+.achievement-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+.contact-sep { color: rgba(255,255,255,0.15); }
+.contact-links a { color: var(--accent); text-decoration: none; }
+.contact-links a:hover { text-decoration: underline; }
+
 @media (max-width: 700px) {
   .avatar { width: 86px; height: 86px; font-size: 34px; }
   .hero h1 { font-size: 26px; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .contact-links { flex-direction: column; gap: 4px; }
+  .contact-sep { display: none; }
 }
