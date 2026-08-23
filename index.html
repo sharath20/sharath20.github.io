@@ -4,18 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Venkat Mudhigonda — Full-stack Senior Software Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0a0e'/%3E%3Ctext x='50' y='64' font-size='48' font-family='Georgia,serif' font-weight='700' fill='%23ff8a3d' text-anchor='middle'%3EVM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="Full-stack Senior Software Engineer with 7+ years building scalable distributed systems for enterprise financial platforms." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Venkat Mudhigonda — Full-stack Senior Software Engineer" />
+  <meta property="og:description" content="Full-stack Senior Software Engineer with 7+ years building scalable distributed systems for enterprise financial platforms." />
+  <meta property="og:url" content="https://sharath20.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Venkat Mudhigonda — Full-stack Senior Software Engineer" />
+  <meta name="twitter:description" content="Full-stack Senior Software Engineer with 7+ years building scalable distributed systems for enterprise financial platforms." />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main">
       <a class="brand" href="#home">Venkat Mudhigonda</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
-      <a href="resume.pdf" download="Venkat_Mudhigonda_Resume.pdf" target="_blank" aria-label="Resume PDF download">Resume (PDF)</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+      <div class="nav-links" id="primary-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.html">Resume</a>
+      </div>
     </nav>
     <div class="hero" id="home">
       <div class="avatar" aria-label="Profile">
@@ -25,7 +41,7 @@
       <p class="subtitle">Full-stack Senior Software Engineer</p>
       <p class="cta-wrap">
         <a class="btn" href="#achievements">View achievements</a>
-        <a class="btn outline" href="resume.pdf" download="Venkat_Mudhigonda_Resume.pdf">Download resume</a>
+        <a class="btn outline" href="resume.html">View resume</a>
       </p>
     </div>
   </header>
@@ -66,35 +82,35 @@
       <h2>Key Achievements</h2>
       <div class="achievements-list">
         <div class="achievement-item">
-          <div class="achievement-icon" aria-hidden="true"></div>
+          <div class="achievement-icon" aria-hidden="true">01</div>
           <div class="achievement-content">
             <h3>Microservices Architecture</h3>
             <p>Architected 3 enterprise microservices in Python and .NET Core on fault-tolerant AWS infrastructure, reducing API response time by 40% and sustaining 99.9% uptime across millions of regulated financial transactions monthly.</p>
           </div>
         </div>
         <div class="achievement-item">
-          <div class="achievement-icon" aria-hidden="true"></div>
+          <div class="achievement-icon" aria-hidden="true">02</div>
           <div class="achievement-content">
             <h3>Platform Migration</h3>
             <p>Led 4-month platform migration from Windows to Linux using Docker containerization, enabling autoscaling and cutting deployment time from 1 hour to 15 minutes for 50+ developers.</p>
           </div>
         </div>
         <div class="achievement-item">
-          <div class="achievement-icon" aria-hidden="true"></div>
+          <div class="achievement-icon" aria-hidden="true">03</div>
           <div class="achievement-content">
             <h3>CI/CD Pipeline</h3>
             <p>Implemented GitLab CI/CD pipelines with blue-green deployment strategy, accelerating release frequency from monthly to weekly with zero production incidents during PHP 7.4-8.3 upgrades and full OWASP compliance.</p>
           </div>
         </div>
         <div class="achievement-item">
-          <div class="achievement-icon" aria-hidden="true"></div>
+          <div class="achievement-icon" aria-hidden="true">04</div>
           <div class="achievement-content">
             <h3>Test Coverage</h3>
             <p>Increased unit test coverage from 15% to 85% using xUnit (.NET) and PHPUnit, reducing production defects by 60%. Improved automation efficiency across 50+ daily runs.</p>
           </div>
         </div>
         <div class="achievement-item">
-          <div class="achievement-icon" aria-hidden="true"></div>
+          <div class="achievement-icon" aria-hidden="true">05</div>
           <div class="achievement-content">
             <h3>Mentorship</h3>
             <p>Mentored 35+ engineers and interns on .NET, Python, C#, React, and MySQL best practices via structured training and pair programming, reducing onboarding time by 30%.</p>
@@ -108,7 +124,7 @@
       <div class="contact-links">
         <a href="mailto:mvcsharathsai95@gmail.com">mvcsharathsai95@gmail.com</a>
         <span class="contact-sep">|</span>
-        <span>405-326-3355</span>
+        <a href="tel:+14053263355">405-326-3355</a>
         <span class="contact-sep">|</span>
         <a href="https://linkedin.com/in/sharathmudhigonda" target="_blank" rel="noopener">linkedin.com/in/sharathmudhigonda</a>
       </div>
@@ -119,8 +135,6 @@
     &copy; <span id="year"></span> Venkat Mudhigonda
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>

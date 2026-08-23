@@ -4,26 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Venkat Mudhigonda — Resume</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0a0e'/%3E%3Ctext x='50' y='64' font-size='48' font-family='Georgia,serif' font-weight='700' fill='%23ff8a3d' text-anchor='middle'%3EVM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Venkat Mudhigonda — Resume" />
+  <meta property="og:description" content="Full-stack Senior Software Engineer with 7+ years building scalable distributed systems for enterprise financial platforms." />
+  <meta property="og:url" content="https://sharath20.github.io/resume.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Venkat Mudhigonda — Resume" />
+  <meta name="twitter:description" content="Full-stack Senior Software Engineer with 7+ years building scalable distributed systems for enterprise financial platforms." />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main">
       <a class="brand" href="#top">Venkat</a>
-      <a href="resume.md">Resume (MD)</a>
-      <a href="resume.html" aria-label="Resume (HTML)">Resume (HTML)</a>
-      <a href="resume.pdf" download="Venkat_Mudhigonda_Resume.pdf" target="_blank" aria-label="Resume PDF download">Resume (PDF)</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+      <div class="nav-links" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="resume.md">Resume (MD)</a>
+      </div>
     </nav>
   </header>
-  <main id="top" class="section resume" style="padding-top:20px;">
+  <main id="top" class="section resume">
     <header class="resume-header" aria-label="Resume header">
       <h1>Venkat Mudhigonda</h1>
-      <p class="contact">Email • Dallas, TX • LinkedIn: <a href="https://linkedin.com/in/sharathmudhigonda">linkedin.com/in/sharathmudhigonda</a> • GitHub: <a href="https://github.com/your-username">your-username</a></p>
+      <p class="contact">Email • Dallas, TX • LinkedIn: <a href="https://linkedin.com/in/sharathmudhigonda">linkedin.com/in/sharathmudhigonda</a> • GitHub: <a href="https://github.com/sharath20">github.com/sharath20</a></p>
     </header>
 
     <section class="resume-section" aria-labelledby="skills-title">
       <h2 id="skills-title">Technical Skills</h2>
-      <ul>
+      <ul class="skills-list">
         <li><strong>Languages:</strong> Python, C#, .NET Core, PHP (Laravel, Laminas), JavaScript, TypeScript, React, Redux</li>
         <li><strong>Cloud & Infrastructure:</strong> AWS (S3, CloudFront, EC2, ElastiCache), Docker, Kubernetes, CI/CD Pipelines, Splunk</li>
         <li><strong>Data & Messaging:</strong> PostgreSQL, SQL Server, MySQL, Redis, Couchbase, RabbitMQ, Kafka</li>
@@ -34,7 +49,10 @@
 
     <section class="resume-section" aria-labelledby="work-title">
       <h2 id="work-title">Work Experience</h2>
-      <h3>Paycom — Senior Software Engineer (July 2018 - Present)</h3>
+      <div class="role-header">
+        <h3>Paycom — Senior Software Engineer</h3>
+        <span class="role-dates">July 2018 – Present</span>
+      </div>
       <ul>
         <li>Architected 15+ enterprise microservices in Python and .NET Core (C#) on fault-tolerant AWS infrastructure (S3, CloudFront, EC2, ElastiCache), reducing API response time by 40% and sustaining 99.9% uptime, processing millions of regulated financial transactions monthly.</li>
         <li>Led 4-month platform migration from Windows to Linux using Docker containerization across production applications, enabling autoscaling and cutting deployment time from 1 hour to 15 minutes for 50+ developers.</li>
@@ -54,6 +72,6 @@
     </section>
   </main>
   <footer class="site-footer">© <span id="year"></span> Venkat Mudhigonda</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="site.js" defer></script>
 </body>
 </html>
