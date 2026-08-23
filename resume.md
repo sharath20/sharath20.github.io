@@ -8,13 +8,13 @@ TECHNICAL SKILLS
 - Cloud & Infrastructure: AWS (S3, CloudFront, EC2, ElastiCache), Docker, Kubernetes, CI/CD Pipelines, Splunk
 - Data & Messaging: PostgreSQL, SQL Server, MySQL, Redis, Couchbase, RabbitMQ, Kafka
 - Practices & Tools: Distributed Systems, Microservices, RESTful APIs, OWASP, xUnit, PHPUnit, Selenium, Playwright, Git
-- AI Tools: Claude (Anthropic), Kimi K, OpenCode
+- AI Tools: Claude (Anthropic), Kimi K, OpenCode, DeepSeek
 
 WORK EXPERIENCE
 Paycom
 Senior Software Engineer
 July 2018 - Present
-• Architected 15+ enterprise microservices in Python and .NET Core (C#) on fault-tolerant AWS infrastructure (S3, CloudFront, EC2, ElastiCache), reducing API response time by 40% and sustaining 99.9% uptime, processing millions of regulated financial transactions monthly.
+• Architected 5+ enterprise microservices in Python and .NET Core (C#) on fault-tolerant AWS infrastructure (S3, CloudFront, EC2, ElastiCache), reducing API response time by 40% and sustaining 99.9% uptime, processing millions of regulated financial transactions monthly.
 • Led 4-month platform migration from Windows to Linux using Docker containerization across production applications, enabling autoscaling and cutting deployment time from 1 hour to 15 minutes for 50+ developers.
 • Implemented GitLab CI/CD pipelines with blue-green deployment strategy, accelerating release frequency from monthly to weekly with zero production incidents during PHP 7.4–8.3 upgrades and full OWASP compliance.
 • Developed 400+ self-service reporting features using the Laminas framework with Redis caching and query optimization, processing millions of workforce records without manual intervention.
